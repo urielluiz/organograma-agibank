@@ -1,9 +1,6 @@
 /* ========================================================
    DADOS DO ORGANOGRAMA — Agibank
    Cada área tem: nome + descricao (array de parágrafos).
-   Para editar um texto, basta mudar as frases dentro das aspas.
-   Para quebrar em um novo parágrafo, adicione uma nova linha
-   dentro do array, separada por vírgula.
    ======================================================== */
 var ORG_DATA = [
   {
@@ -74,7 +71,7 @@ var ORG_DATA = [
         ]
       },
       {
-        nome: "Riscos Financeiro e de Capital",
+        nome: "Risco Financeiro e de Capital",
         descricao: [
           "Nossa tarefa é garantir que o crescimento do Agi aconteça com segurança, responsabilidade e visão de futuro. Atuamos como guardiões da solidez da empresa, combinando conhecimento técnico, tecnologia e análises rigorosas para antecipar cenários e proteger nossos resultados. Aqui, traduzimos riscos complexos em decisões inteligentes e estratégicas, sempre em conformidade com as exigências regulatórias."
         ]
@@ -268,3 +265,34 @@ var ORG_DATA = [
           "• Information Security: protegemos os dados e controlamos os acessos de forma inteligente e eficiente, aplicando políticas, boas práticas e soluções tecnológicas para garantir a segurança das informações do Agi e de nossos clientes.",
           "Nosso compromisso é claro: construir e evoluir uma estrutura de segurança cada vez mais moderna, automatizada e inteligente, capaz de acompanhar o ritmo do negócio e os desafios do cenário digital. Assim, garantimos que o Agi siga crescendo de forma segura, confiável e preparada para o futuro."
         ]
+      }
+    ]
+  },
+  {
+    nome: "Tesouraria e Relação com Investidores",
+    areas: [
+      {
+        nome: "ALM",
+        descricao: [
+          "A diretoria de Tesouraria e Relação com Investidores atua para garantir que o Agi cresça com confiabilidade e inteligência financeira. Captam no mercado a nossa matéria-prima, recursos financeiros, e fazem a gestão eficiente dos nossos ativos e passivos. Apoiam também a definição das estratégias de precificação dos produtos e fortalecem a relação com investidores."
+        ]
+      },
+      {
+        nome: "Relação com Investidor e M&A",
+        descricao: [
+          "Somos a ponte entre o Agibank e o mercado financeiro. Nosso papel é conectar estratégia, credibilidade e crescimento por meio de uma comunicação transparente com investidores e da busca constante por oportunidades que expandam o negócio.",
+          "Atuamos em duas frentes:",
+          "• Relação com Investidores (RI): trabalhamos para construir e manter a confiança do mercado. Apoiamos a alta liderança na tomada de decisões estratégicas e garantimos que o Agibank seja percebido como uma empresa sólida, transparente e preparada para o futuro.",
+          "• Fusões e Aquisições (M&A): aqui, pensamos grande. Buscamos novos caminhos para crescer de forma inorgânica, identificando negócios com sinergia estratégica, analisando mercados e conduzindo operações que tragam valor real para o Agibank."
+        ]
+      },
+      {
+        nome: "Tesouraria",
+        descricao: [
+          "Na Gerência de Tesouraria, trabalhamos para garantir que o Agi tenha os recursos certos, na hora certa, para crescer com solidez e impacto. Atuamos com profundidade técnica e visão estratégica, estruturando operações de captação no mercado de capitais e gerenciando a alocação dos recursos da companhia com responsabilidade e inteligência financeira.",
+          "Nossa missão é conectar as decisões de hoje com a sustentabilidade do negócio, sempre com um olhar atento à regulação, ao cenário econômico e às oportunidades do mercado."
+        ]
+      }
+    ]
+  }
+];
