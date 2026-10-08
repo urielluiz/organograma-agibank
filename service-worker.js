@@ -1,6 +1,6 @@
 /* IMPORTANTE: mude esse número toda vez que publicar uma atualização
    relevante, para forçar os usuários a receberem a nova versão. */
-const CACHE_VERSION = "v2";
+const CACHE_VERSION = "v3";
 const CACHE_NAME = "organograma-agibank-" + CACHE_VERSION;
 
 const PRECACHE_URLS = [
