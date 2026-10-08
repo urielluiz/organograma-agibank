@@ -295,3 +295,18 @@ button { font-family: inherit; }
   .oc-header-left { width: 100%; justify-content: space-between; }
   .oc-search { max-width: none; width: 100%; }
 }
+
+/* ===== PARÁGRAFOS DO MODAL ===== */
+.modal-description p {
+  margin-bottom: 14px;
+}
+.modal-description p:last-child {
+  margin-bottom: 0;
+}
+.modal-description p.bullet-item {
+  padding-left: 4px;
+}
+.modal-description p.modal-empty {
+  font-style: italic;
+  color: var(--muted-text);
+}
