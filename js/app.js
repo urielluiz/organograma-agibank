@@ -60,13 +60,35 @@
   function openAreaModal(dIdx, aIdx) {
     var dir = ORG_DATA[dIdx];
     var area = dir.areas[aIdx];
+
     document.getElementById("modal-dir-name").textContent = dir.nome;
     document.getElementById("modal-title").textContent = area.nome;
-    document.getElementById("modal-field-descricao").textContent =
-      area.descricao || "Descrição a ser adicionada em breve.";
+
+    var descContainer = document.getElementById("modal-field-descricao");
+    descContainer.innerHTML = "";
+
+    var paragraphs = Array.isArray(area.descricao) ? area.descricao : [];
+
+    if (paragraphs.length === 0) {
+      var emptyMsg = document.createElement("p");
+      emptyMsg.className = "modal-empty";
+      emptyMsg.textContent = "Descrição em breve.";
+      descContainer.appendChild(emptyMsg);
+    } else {
+      paragraphs.forEach(function (text) {
+        var p = document.createElement("p");
+        if (text.trim().indexOf("•") === 0) {
+          p.className = "bullet-item";
+        }
+        p.textContent = text;
+        descContainer.appendChild(p);
+      });
+    }
+
     document.getElementById("area-modal-overlay").classList.add("active");
     document.body.style.overflow = "hidden";
   }
+
   function closeAreaModal() {
     document.getElementById("area-modal-overlay").classList.remove("active");
     document.body.style.overflow = "";
